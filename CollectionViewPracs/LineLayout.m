@@ -20,7 +20,7 @@
 {
     self = [super init];
     if (self) {
-        [self setup];
+        [self setupLayout];
     }
     return self;
 }
@@ -29,12 +29,12 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self setup];
+        [self setupLayout];
     }
     return self;
 }
 
-- (void)setup
+- (void)setupLayout
 {
     self.itemSize = CGSizeMake(kItemSize, kItemSize);
     self.sectionInset = UIEdgeInsetsMake(kSectionInset, 0.0, kSectionInset, 0.0);
