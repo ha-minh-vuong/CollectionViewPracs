@@ -149,3 +149,5 @@ static NSString * const StackLayoutCellKind = @"StackCell";
 
 @end
 
+// WARNING: This class is *very* slow.
+// TODO: Make it faster.

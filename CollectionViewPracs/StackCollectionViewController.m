@@ -63,6 +63,8 @@ static NSString *const identifier = @"CollectionViewCell";
     label.text = [Data data][indexPath.section][indexPath.row];
     cell.layer.rasterizationScale = [[UIScreen mainScreen] scale];
     cell.layer.shouldRasterize = YES;
+    cell.layer.borderWidth = 3;
+    cell.layer.borderColor = [[UIColor whiteColor] CGColor];
     cell.backgroundColor = [UIColor yellowColor];
     return cell;
 }
