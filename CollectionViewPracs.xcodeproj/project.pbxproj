@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		494B693B1776C08A00A3258C /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494B693A1776C08A00A3258C /* CollectionViewCell.xib */; };
+		494BB983177AED8400FF5D21 /* LineCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BB982177AED8400FF5D21 /* LineCollectionViewController.m */; };
+		494BB986177AEE1600FF5D21 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BB985177AEE1600FF5D21 /* LineLayout.m */; };
 		497427E61776D95F006FA02D /* SimpleCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 497427E51776D95F006FA02D /* SimpleCollectionReusableView.m */; };
 		497427E91776F20B006FA02D /* StackCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497427E81776F20B006FA02D /* StackCollectionViewController.m */; };
 		498968C41778330A0027473F /* StackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 498968C31778330A0027473F /* StackLayout.m */; };
@@ -30,6 +32,10 @@
 
 /* Begin PBXFileReference section */
 		494B693A1776C08A00A3258C /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		494BB981177AED8400FF5D21 /* LineCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineCollectionViewController.h; sourceTree = "<group>"; };
+		494BB982177AED8400FF5D21 /* LineCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineCollectionViewController.m; sourceTree = "<group>"; };
+		494BB984177AEE1600FF5D21 /* LineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayout.h; sourceTree = "<group>"; };
+		494BB985177AEE1600FF5D21 /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
 		497427E41776D95F006FA02D /* SimpleCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCollectionReusableView.h; sourceTree = "<group>"; };
 		497427E51776D95F006FA02D /* SimpleCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCollectionReusableView.m; sourceTree = "<group>"; };
 		497427E71776F20B006FA02D /* StackCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackCollectionViewController.h; sourceTree = "<group>"; };
@@ -75,6 +81,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		494BB980177AED3C00FF5D21 /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				494BB981177AED8400FF5D21 /* LineCollectionViewController.h */,
+				494BB982177AED8400FF5D21 /* LineCollectionViewController.m */,
+				494BB984177AEE1600FF5D21 /* LineLayout.h */,
+				494BB985177AEE1600FF5D21 /* LineLayout.m */,
+			);
+			name = Line;
+			sourceTree = "<group>";
+		};
 		497427EA1776F240006FA02D /* Stack */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +142,7 @@
 				49DAF5CF1775A90100B476ED /* RootViewController.m */,
 				49DAF5D71775BBD300B476ED /* Simple */,
 				497427EA1776F240006FA02D /* Stack */,
+				494BB980177AED3C00FF5D21 /* Line */,
 				494B693A1776C08A00A3258C /* CollectionViewCell.xib */,
 				49DAF5D41775B0A100B476ED /* Data.h */,
 				49DAF5D51775B0A100B476ED /* Data.m */,
@@ -234,6 +252,8 @@
 				497427E61776D95F006FA02D /* SimpleCollectionReusableView.m in Sources */,
 				497427E91776F20B006FA02D /* StackCollectionViewController.m in Sources */,
 				498968C41778330A0027473F /* StackLayout.m in Sources */,
+				494BB983177AED8400FF5D21 /* LineCollectionViewController.m in Sources */,
+				494BB986177AEE1600FF5D21 /* LineLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

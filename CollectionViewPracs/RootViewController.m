@@ -12,7 +12,8 @@
 
 #import "StackCollectionViewController.h"
 #import "StackLayout.h"
-
+#import "LineLayout.h"
+#import "LineCollectionViewController.h"
 
 @interface RootViewController ()
 @property (nonatomic, strong) NSArray *demos;
@@ -40,7 +41,8 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.demos = @[@"Simple",
-                   @"Stack"];
+                   @"Stack",
+                   @"Line"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -127,6 +129,9 @@
         case 1:
             [self performStack];
             break;
+        case 2:
+            [self performLine];
+            break;
         default:
             break;
     }
@@ -145,6 +150,13 @@
     StackLayout *stackLayout = [[StackLayout alloc] init];
     StackCollectionViewController *stackVC = [[StackCollectionViewController alloc] initWithCollectionViewLayout:stackLayout];
     [self.navigationController pushViewController:stackVC animated:YES];
+}
+
+- (void)performLine
+{
+    LineLayout *lineLayout = [[LineLayout alloc] init];
+    LineCollectionViewController *lineVC = [[LineCollectionViewController alloc] initWithCollectionViewLayout:lineLayout];
+    [self.navigationController pushViewController:lineVC animated:YES];
 }
 
 @end
